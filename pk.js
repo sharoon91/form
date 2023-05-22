@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var firstNameInput = document.querySelector('#text-00000012');
-  var firstNameLabel = document.querySelector('#text-0000001e');
+  var firstNameInput = document.getElementByID('text-00000012');
+  var firstNameLabel = document.getElementByID('text-0000001e');
 
   if (firstNameInput) {
     firstNameInput.addEventListener('input', function() {
