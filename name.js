@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Your code here
   var firstNameInput = document.querySelector('#text-00000012');
-
   var firstNameLabel = document.querySelector('#text-0000001e');
 
-  firstNameInput.addEventListener('input', function() {
-    // Update the label text with the entered value
-    firstNameLabel.value =  firstNameInput.value;
-  });
+  if (firstNameInput) {
+    firstNameInput.addEventListener('input', function() {
+      firstNameLabel.value = firstNameInput.value;
+    });
+  } else {
+    console.error("Element with ID 'text-00000012' not found.");
+  }
 });
