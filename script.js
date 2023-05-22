@@ -1,7 +1,8 @@
-var nameField = document.getElementById('#text-00000012');
+var firstNameInput = document.querySelector('#text-00000012');
 
-var displayField = document.getElementById('#text-0000001e');
+var firstNameLabel = document.querySelector('#text-0000001e');
 
-nameField.addEventListener('input', function() {
-  displayField.value = nameField.value;
+firstNameInput.addEventListener('input', function() {
+  // Update the label text with the entered value
+  firstNameLabel.value =  firstNameInput.value;
 });
